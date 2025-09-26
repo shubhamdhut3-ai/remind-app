@@ -1,11 +1,14 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+
     "strict": true,
+    "esModuleInterop": true,
     "paths": {
       "@/*": [
         "./*"
-      ]
+      ],
+
     }
   },
   "include": [
@@ -13,5 +16,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "components/config/firebase.ts"  ]
 }
